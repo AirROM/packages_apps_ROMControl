@@ -29,10 +29,9 @@ public class About extends AOKPPreferenceFragment {
         super.onCreate(savedInstanceState);
         setTitle(R.string.title_about);
         addPreferencesFromResource(R.xml.prefs_about);
-        mSiteUrl = findPreference("aokp_website");
-        mSourceUrl = findPreference("aokp_source");
-        mReviewUrl = findPreference("aokp_review");
-        mIrcUrl = findPreference("aokp_irc");
+        mSiteUrl = findPreference("air_website");
+        mSourceUrl = findPreference("air_source");
+        mReviewUrl = findPreference("air_openwise");
 
         PreferenceGroup devsGroup = (PreferenceGroup) findPreference("devs");
         ArrayList<Preference> devs = new ArrayList<Preference>();
@@ -53,13 +52,11 @@ public class About extends AOKPPreferenceFragment {
     @Override
     public boolean onPreferenceTreeClick(PreferenceScreen preferenceScreen, Preference preference) {
         if (preference == mSiteUrl) {
-            launchUrl("http://aokp.co/");
+            launchUrl("http://air.sloud.kr/");
         } else if (preference == mSourceUrl) {
-            launchUrl("http://github.com/aokp");
+            launchUrl("http://github.com/AirROM");
         } else if (preference == mReviewUrl) {
-            launchUrl("http://gerrit.aokp.co");
-        } else if (preference == mIrcUrl) {
-            launchUrl("http://webchat.freenode.net/?channels=teamkang");
+            launchUrl("http://cafe.naver.com/openwise");
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
     }
