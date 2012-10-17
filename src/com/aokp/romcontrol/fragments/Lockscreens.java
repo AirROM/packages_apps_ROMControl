@@ -116,6 +116,8 @@ public class Lockscreens extends AOKPPreferenceFragment implements
     CheckBoxPreference mLockscreenVibrate;
     ListPreference mTargetNumber;
 
+    ListPreference mTargetNumber;
+
     ArrayList<String> keys = new ArrayList<String>();
 
     @Override
@@ -186,8 +188,8 @@ public class Lockscreens extends AOKPPreferenceFragment implements
         mTargetNumber = (ListPreference) findPreference(PREF_NUMBER_OF_TARGETS);
         mTargetNumber.setOnPreferenceChangeListener(this);
         mTargetNumber.setValue(Integer.toString(Settings.System.getInt(getActivity()
-                .getContentResolver(), Settings.System.LOCKSCREEN_TARGET_AMOUNT,
-                2)));
+                .getContentResolver(), Settings.System.LOCKSCREEN_TARGET_AMOUNT
+                ,2)));
 
         mLockscreenTargets = findPreference("lockscreen_targets");
 
