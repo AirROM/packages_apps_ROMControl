@@ -143,10 +143,6 @@ public class Lockscreens extends AOKPPreferenceFragment implements
         mVolumeRockerWake.setChecked(Settings.System.getBoolean(mContext
                 .getContentResolver(), Settings.System.VOLUME_WAKE_SCREEN, false));
 
-        mLockScreenTimeoutUserOverride = (CheckBoxPreference) findPreference(PREF_USER_OVERRIDE);
-        mLockScreenTimeoutUserOverride.setChecked(Settings.Secure.getInt(getActivity()
-                .getContentResolver(), Settings.Secure.LOCK_SCREEN_LOCK_USER_OVERRIDE, 0) == 1);
-
         mLockscreenTextColor = (ColorPickerPreference) findPreference(PREF_LOCKSCREEN_TEXT_COLOR);
         mLockscreenTextColor.setOnPreferenceChangeListener(this);
 
