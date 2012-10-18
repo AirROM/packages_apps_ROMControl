@@ -116,8 +116,6 @@ public class Lockscreens extends AOKPPreferenceFragment implements
     CheckBoxPreference mLockscreenVibrate;
     ListPreference mTargetNumber;
 
-    ListPreference mTargetNumber;
-
     ArrayList<String> keys = new ArrayList<String>();
 
     @Override
