@@ -108,6 +108,7 @@
     <string name="bootani_cat">Boot Animation</string>
     <string name="navbar_cat">NavBar</string>
     <string name="notification_cat">Notification</string>
+    <string name="tabletUI_cat">Tablet UI</string>
     <string name="enable_volume_options">Enable Volume Panel</string>
     <string name="status_bar_notif_count_title">Show notification count</string>
     <string name="status_bar_notif_count_summary">Display number of pending notifications on the status bar</string>
@@ -192,6 +193,11 @@
     <string name="toggles_display_close">Close</string>
     <string name="toggles_order_title">Toggle order</string>
     <string name="toggles_order_summary">Choose the order which your toggles are displayed</string>
+    <string name="title_settings_behavior">Use default settings behavior</string>
+    <string name="summary_settings_behavior_default">Short press for Settings, Long press for Toggles</string>
+    <string name="summary_settings_behavior_reverse">Short press for Toggles, Long press for Settings</string>
+    <string name="title_toggles_autohide">Auto hide toggles</string>
+    <string name="summary_toggles_autohide">Hide toggles after drawer closes.</string>
     <string name="brightness_location_title">Brightness location</string>
     <string name="reset_toggles_title">Reset toggles</string>
     <string name="reset_toggles_summary">Reset all toggles and their order</string>
@@ -438,6 +444,8 @@
     <string name="lockscreen_calendar_interval_summary">Choose the animation speed in seconds.</string>
     <string name="lockscreen_vibrate_disabled_title">LockScreen Vibrate</string>
     <string name="lockscreen_vibrate_disabled_summary">Vibrate On/Off for slide lockscreen style.</string>
+    <string name="use_lockscreen_themes_title">Allow theming of lockscreen</string>
+    <string name="use_lockscreen_themes_summary">Theme chooser themes if supported by the theme will theme lockscreen assets. Warning: There may be issues, reboot required to take effect.</string>
 
     <!-- Lockscreen Targets-->
     <string name="custom_targets">Custom lockscreen targets</string>
@@ -468,6 +476,7 @@
     <string name="icon_picker_search">Search</string>
     <string name="icon_picker_sms">Messaging</string>
     <string name="icon_picker_twitter">Twitter</string>
+    <string name="icon_picker_unlock">Unlock</string>
     <string name="icon_picker_title">Choose icon source</string>
     <string name="icon_picker_system_icons_title">System icons</string>
     <string name="icon_picker_aokp_icons_title">AOKP icons</string>
@@ -503,6 +512,8 @@
     <string name="wifi_save">Save</string>
     <string name="lockscreen_target_reset">Lockscreen shortcuts reset to default</string>
     <string name="lockscreen_target_save">Lockscreen targets saved</string>
+    <string name="lockscreen_target_save_error_title">Error saving targets</string>
+    <string name="lockscreen_target_save_error_msg">You must have at least one target that unlocks the screen!</string>
     <string name="lockscreen_target_reset_title">Reset</string>
     <string name="lockscreen_target_reset_message">Delete all user created lockscreen target and restore to default?</string>
     <string name="lockscreen_target_edit_title">Edit target and icon</string>
@@ -844,6 +855,8 @@
     <string name="show_signal_text">Show signal text</string>
     <string name="show_with_dbm">Show with dBm</string>
 
-
+    <!-- haptic feedback on toggle press -->
+    <string name="toggles_enable_haptic_feedback_title">Enable haptic feedback</string>
+    <string name="toggles_enable_haptic_feedback_summary">Use haptic feedback when pressing toggles</string>
 
 </resources>
