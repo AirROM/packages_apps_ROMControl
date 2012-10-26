@@ -388,11 +388,6 @@ public class Lockscreens extends AOKPPreferenceFragment implements
             Log.e("RC_Lockscreens", "key: " + preference.getKey());
             return Settings.System.putInt(getActivity().getContentResolver(), preference.getKey(),
                     ((CheckBoxPreference)preference).isChecked() ? 1 : 0);
-        } else if (preference == mUseLSThemes) {
-            Settings.System.putBoolean(mContext.getContentResolver(),
-                    Settings.System.USE_LOCKSCREEN_THEMES,
-                    ((CheckBoxPreference) preference).isChecked());
-            return true;
         }
         
         return super.onPreferenceTreeClick(preferenceScreen, preference);
