@@ -91,18 +91,14 @@
 
     <!-- About -->
     <string name="devs">Developers</string>
-    <string name="air">AirROM x SR OpenWise</string>
+    <string name="air">AirROM</string>
     <string name="air_website_title">AirROM Blog</string>
     <string name="air_website_summary">http://air.sloud.kr</string>
     <string name="air_source_title">AirROM Source</string>
     <string name="air_source_summary">AirROM is fully open source. You can always check out the latest source at github.com/AirROM</string>
-    <string name="air_openwise_title">SR OpenWise Team</string>
-    <string name="air_openwise_summary">http://cafe.naver.com/openwise</string>
     <string name="about_air">About AirROM</string>
     <string name="about_air_summary">@null</string>
-    <string name="donate_rdata">http://cafe.naver.com/openwise</string>
-    <string name="donate_toktak">http://cafe.naver.com/openwise</string>
-    <string name="donate_iodes">http://cafe.naver.com/openwise</string>
+    <string name="donate_rdata">http://cafe.naver.com/nxss</string>
 
     <!-- General UI -->
     <string name="bootani_cat">Boot Animation</string>

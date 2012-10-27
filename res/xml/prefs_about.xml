@@ -17,11 +17,6 @@
 			android:title="@string/air_source_title"
 			android:summary="@string/air_source_summary" />
 
-		<Preference
-			android:key="air_openwise"
-			android:title="@string/air_openwise_title"
-			android:summary="@string/air_openwise_summary" />
-
 	</PreferenceCategory>
 
 	<PreferenceCategory
@@ -32,18 +27,6 @@
 			aokp:nameDev="r_data"
 			aokp:twitterHandle="ko_ma"
 			aokp:donateLink="@string/donate_rdata" />
-
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="Toktak"
-			aokp:nameDev="TOKTAK"
-			aokp:twitterHandle=""
-			aokp:donateLink="@string/donate_toktak" />
-		
-		<com.aokp.romcontrol.widgets.DeveloperPreference
-			android:title="Iodes"
-			aokp:nameDev="IODES"
-			aokp:twitterHandle=""
-			aokp:donateLink="@string/donate_iodes" />
 
 	</PreferenceCategory>
 

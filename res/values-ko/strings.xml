@@ -67,14 +67,12 @@
     <string name="use_custom_app_summary">최근 앱을 보는곳에 커스텀 앱을 놓습니다.</string>
     <string name="select_custom_app_title">사용자 어플리케이션을 선택</string>
     <string name="group_applications">어플리케이션</string>
-    <string name="devs">개발자들</string>
-    <string name="air">공기롬 x SR OpenWise</string>
+    <string name="devs">개발자</string>
+    <string name="air">공기롬</string>
     <string name="air_website_title">공기롬 블로그</string>
     <string name="air_website_summary">http://air.sloud.kr</string>
     <string name="air_source_title">공기롬 소스</string>
     <string name="air_source_summary">공기롬은 오픈 소스 프로젝트입니다. 소스는 github.com/AirROM에서 찾을 수 있습니다. 기반은 AOKP입니다.</string>
-    <string name="air_openwise_title">SR OpenWise Team</string>
-    <string name="air_openwise_summary">공기롬은 OpenWise팀과 함께합니다.</string>
     <string name="about_air">공기롬 정보</string>
     <string name="about_air_summary">@null</string>
     <string name="enable_volume_options">볼륨 패널 활성화</string>
