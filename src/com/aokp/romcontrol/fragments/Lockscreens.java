@@ -88,8 +88,6 @@ public class Lockscreens extends AOKPPreferenceFragment implements
     private static final String PREF_LOCKSCREEN_AUTO_ROTATE = "lockscreen_auto_rotate";
     private static final String PREF_STOCK_MUSIC_LAYOUT = "lockscreen_stock_music_layout";
     private static final String PREF_LOCKSCREEN_VIBRATE = "lockscreen_vibrate";
-    private static final String PREF_ALT_LOCKSCREEN = "alt_lockscreen";
-    private static final String PREF_ALT_LOCKSCREEN_BG_COLOR = "alt_lock_bg_color";
     private static final String PREF_CIRCLES_LOCK_BG_COLOR = "circles_lock_bg_color";
     private static final String PREF_CIRCLES_LOCK_RING_COLOR = "circles_lock_ring_color";
     private static final String PREF_CIRCLES_LOCK_HALO_COLOR = "circles_lock_halo_color";
@@ -122,8 +120,6 @@ public class Lockscreens extends AOKPPreferenceFragment implements
     CheckBoxPreference mLockscreenAutoRotate;
     CheckBoxPreference mStockMusicLayout;
     CheckBoxPreference mLockscreenVibrate;
-    CheckBoxPreference mAltLockscreen;
-    ColorPickerPreference mAltLockscreenBgColor;
     ColorPickerPreference mCirclesLockBgColor;
     ColorPickerPreference mCirclesLockRingColor;
     ColorPickerPreference mCirclesLockHaloColor;
@@ -217,13 +213,6 @@ public class Lockscreens extends AOKPPreferenceFragment implements
         mLockscreenVibrate = (CheckBoxPreference) findPreference(PREF_LOCKSCREEN_VIBRATE);
         mLockscreenVibrate.setChecked(Settings.System.getInt(getActivity().getApplicationContext().getContentResolver(),
                 Settings.System.LOCKSCREEN_VIBRATE_DISABLED, 1) == 1);
-
-        mAltLockscreen = (CheckBoxPreference) findPreference(PREF_ALT_LOCKSCREEN);
-        mAltLockscreen.setChecked(Settings.System.getBoolean(getActivity().getContentResolver(),
-                Settings.System.USE_ALT_LOCKSCREEN, false));
-
-        mAltLockscreenBgColor = (ColorPickerPreference) findPreference(PREF_ALT_LOCKSCREEN_BG_COLOR);
-        mAltLockscreenBgColor.setOnPreferenceChangeListener(this);
 
         mCirclesLockBgColor = (ColorPickerPreference) findPreference(PREF_CIRCLES_LOCK_BG_COLOR);
         mCirclesLockBgColor.setOnPreferenceChangeListener(this);
@@ -429,11 +418,6 @@ public class Lockscreens extends AOKPPreferenceFragment implements
                     Settings.System.LOCKSCREEN_STOCK_MUSIC_LAYOUT,
                     ((CheckBoxPreference) preference).isChecked() ? 1 : 0);
             return true;
-        } else if (preference == mAltLockscreen) {
-            Settings.System.putBoolean(mContext.getContentResolver(),
-                    Settings.System.USE_ALT_LOCKSCREEN,
-                    ((CheckBoxPreference) preference).isChecked());
-            return true;
         } else if (keys.contains(preference.getKey())) {
             Log.e("RC_Lockscreens", "key: " + preference.getKey());
             return Settings.System.putInt(getActivity().getContentResolver(), preference.getKey(),
@@ -528,13 +512,6 @@ public class Lockscreens extends AOKPPreferenceFragment implements
             int intHex = ColorPickerPreference.convertToColorInt(hex);
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.CIRCLES_LOCK_WAVE_COLOR, intHex);
-            return true;
-	 } else if (preference == mAltLockscreenBgColor) {
-            String hex = ColorPickerPreference.convertToARGB(Integer.valueOf(String.valueOf(newValue)));
-            preference.setSummary(hex);
-            int intHex = ColorPickerPreference.convertToColorInt(hex);
-            Settings.System.putInt(getActivity().getContentResolver(),
-                    Settings.System.ALT_LOCK_BG_COLOR, intHex);
             return true;
         }
         return false;

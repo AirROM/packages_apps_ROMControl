@@ -459,9 +459,6 @@
     <string name="lockscreen_calendar_interval_summary">Choose the animation speed in seconds.</string>
     <string name="lockscreen_vibrate_disabled_title">LockScreen Vibrate</string>
     <string name="lockscreen_vibrate_disabled_summary">Vibrate On/Off for slide lockscreen style.</string>
-    <string name="alt_lockscreen_title">Use alt lockscreen</string>
-    <string name="alt_lockscreen_summary">This should not go here</string>
-    <string name="alt_lock_bg_color_title">Alt lock background color</string>
     <string name="circles_lock_cat_title">Circle lockscreen settings</string>
     <string name="circles_lock_bg_color_title">Background color</string>
     <string name="circles_lock_ring_color_title">Ring color</string>
