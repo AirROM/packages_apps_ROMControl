@@ -447,4 +447,10 @@ Examples: New York,NY // New York, NY // 10033 // London, England"</string>
     <string name="performance_daily_reboot_title">매일 다시부팅</string>
     <string name="performance_daily_reboot_summary">다시부팅 예정 %1$s</string>
     <string name="performance_daily_reboot_summary_unscheduled">예약되지 않음</string>
+
+    <string name="circles_lock_cat_title">4X 잠금화면 설정</string>
+    <string name="circles_lock_bg_color_title">백그라운드 색깔</string>
+    <string name="circles_lock_ring_color_title">링 색깔</string>
+    <string name="circles_lock_halo_color_title">후광 색깔</string>
+    <string name="circles_lock_wave_color_title">물결 색깔</string>
 </resources>
